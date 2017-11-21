@@ -10,7 +10,6 @@ for x in data:
 
 print data
 
-
 # 随机生成一个-10到10之间的10位list
 data = [randint(-10, 10) for _ in xrange(10)]
 print data
@@ -22,3 +21,10 @@ print data
 # 列表解析
 data = [x for x in data if x >= 0]
 print data
+
+
+d = {x: randint(60, 100) for x in xrange(1, 21)}
+
+c = {k: v for k, v in d.iteritems() if v > 90}
+
+print c
